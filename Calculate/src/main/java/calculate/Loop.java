@@ -9,6 +9,7 @@ public class Loop{
     Scanner sc = new Scanner(System.in);
     int numberTask;
 
+    //То же самое, логику вынести из конструктора
     /**
      * Цикл выполнения задач
      * Выход по клавише 'q' после соответствующего ввода

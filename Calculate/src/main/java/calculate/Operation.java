@@ -21,6 +21,7 @@ public class Operation {
 
     }
 
+    //методы с маленькой буквы
     /**
      * Выполняет математическую операцию между двумя числами
      * @return результат операции +,-,* или /
@@ -34,7 +35,7 @@ public class Operation {
                     break;
                 case '*':result = a*b;
                     break;
-                case '/':result = a/b;
+                case '/':result = a/b; //а если b=0?
                     break;
             }
             return result;
