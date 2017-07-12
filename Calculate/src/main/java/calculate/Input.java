@@ -20,6 +20,8 @@ public class Input {
 
     //Поля для задания 2
     int stringLen; //Максимальное количество слов(для массива)
+    
+    //Опять-таки логику работы нужно вынести из конструктора
     /**
      * Конструктор вызывается в классе Loop для определения задачи
      */
@@ -49,6 +51,7 @@ public class Input {
         Operation op = new Operation(this.a,this.b, this.operation);
         System.out.printf("Результат операции " + getOperation() + " равняется %.4f\n", op.Calculate());
         }
+        //тут можно органичится просто else. т.е. если первый матчер не сработает, остальные проеврки уже не нужны
         //!Тут выскакивает окно с ошибкой! Но может не выскочить по верх IDE!
         else if(String.valueOf(this.operationString.charAt(0)).matches("[a-z,A-z,0-9,'@!#%$;№=_^]+")){
             JOptionPane.showMessageDialog(new JFrame(),
